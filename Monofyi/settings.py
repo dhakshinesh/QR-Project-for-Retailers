@@ -28,7 +28,7 @@ SECRET_KEY = '1k$&8z-3p2jbppj!_a4cdpkbxk=pc+&)7q&1iridxbd4zhres8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://qr-project-for-retailers.herokuapp.com/']
 
 
 # Application definition
