@@ -18,7 +18,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import dj_database_url
 import django_heroku
 import os
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -28,7 +27,7 @@ SECRET_KEY = '1k$&8z-3p2jbppj!_a4cdpkbxk=pc+&)7q&1iridxbd4zhres8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://qr-project-for-retailers.herokuapp.com/']
+ALLOWED_HOSTS = ['http://localhost:8000/']
 
 
 # Application definition
@@ -77,15 +76,12 @@ WSGI_APPLICATION = 'Monofyi.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ciba',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
