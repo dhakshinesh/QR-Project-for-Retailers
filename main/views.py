@@ -3,11 +3,11 @@ import psycopg2
 from main.models import  ProductInfo
 
 # Create your views here.
-def index(request, pk):
-    owner_obj = ProductInfo.objects.get(pk=pk)
+def index(request):
+    owner_obj = ProductInfo.objects.all()
 
     context = {
-        "drivers": owner_obj,
+        "data": owner_obj,
 
     }
     return render(request, "index.html", context)

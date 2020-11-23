@@ -33,16 +33,18 @@
                 </tr>
                </thead>
                <tbody>
+                 {%for row in data%}
                    <tr>
-                   <td>{{drivers.index}}</td>
-                   <td>{{drivers.name}}</td>
-                   <td>{{drivers.price}}</td>
-                   <td>{{drivers.status}}</td>
-                   <td>{{drivers.location}}</td>
-                   <td>{{drivers.timestamp}}</td>
-                   <td>{{drivers.key}}</td>
+                   <td>{{row.index}}</td>
+                   <td>{{row.name}}</td>
+                   <td>{{row.price}}</td>
+                   <td>{{row.status}}</td>
+                   <td>{{row.location}}</td>
+                   <td>{{row.timestamp}}</td>
+                   <td>{{row.key}}</td>
                    </tr>
                </tbody>
+               {% endfor %}
         </table>
     </body>
 </html>
