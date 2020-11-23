@@ -25,7 +25,7 @@ import os
 SECRET_KEY = '1k$&8z-3p2jbppj!_a4cdpkbxk=pc+&)7q&1iridxbd4zhres8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['http://localhost:8000/']
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['http://localhost:8000/']
 # Application definition
 
 INSTALLED_APPS = [
+    "main",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,8 +79,12 @@ WSGI_APPLICATION = 'Monofyi.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7vu2qberk3khb', 
+        'USER': 'khvziiwdidbcus', 
+        'PASSWORD': 'a30b1259b978d1ef24ae8bd6c9d942f3cf951062f4ccd7136aa785499f10b3cd',
+        'HOST': 'ec2-54-152-40-168.compute-1.amazonaws.com', 
+        'PORT': '5432'
     }
 }
 # Password validation

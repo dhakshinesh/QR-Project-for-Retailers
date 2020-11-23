@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>QR Project-DB</title>
+    </head>
+    <body>
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+        <table>
+            <thead>
+                <tr>
+                 <th>Index</th>
+                 <th>Name</th>
+                 <th>Price</th>
+                 <th>Status</th>
+                 <th>Location</th>
+                 <th>Timestamp</th>
+                 <th>Key</th>
+                </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                   <td>{{drivers.index}}</td>
+                   <td>{{drivers.name}}</td>
+                   <td>{{drivers.price}}</td>
+                   <td>{{drivers.status}}</td>
+                   <td>{{drivers.location}}</td>
+                   <td>{{drivers.timestamp}}</td>
+                   <td>{{drivers.key}}</td>
+                   </tr>
+               </tbody>
+        </table>
+    </body>
+</html>
