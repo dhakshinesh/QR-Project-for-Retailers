@@ -8,6 +8,8 @@ def index(request):
 
     context = {
         "data": owner_obj,
-
     }
     return render(request, "index.html", context)
+
+def generate(request):
+    return render(request, "generate")
