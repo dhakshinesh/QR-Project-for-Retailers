@@ -1,8 +1,6 @@
-<html>
-    <head>
-        <title>QR Project-DB</title>
-    </head>
-    <body>
+{% extends "base.html" %}
+  {% block title %}Hello{% endblock %}
+  {% block content %}
         <style>
             table {
               font-family: arial, sans-serif;
@@ -30,6 +28,7 @@
                  <th>Location</th>
                  <th>Timestamp</th>
                  <th>Key</th>
+                 <th>Company</th>
                 </tr>
                </thead>
                <tbody>
@@ -42,9 +41,9 @@
                    <td>{{row.location}}</td>
                    <td>{{row.timestamp}}</td>
                    <td>{{row.key}}</td>
+                   <td>{{row.company}}</td>
                    </tr>
                </tbody>
                {% endfor %}
         </table>
-    </body>
-</html>
+        {% endblock %}

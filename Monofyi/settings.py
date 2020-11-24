@@ -15,7 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-import dj_database_url
+
 import django_heroku
 import os
 # Quick-start development settings - unsuitable for production
@@ -25,7 +25,7 @@ import os
 SECRET_KEY = '1k$&8z-3p2jbppj!_a4cdpkbxk=pc+&)7q&1iridxbd4zhres8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['http://localhost:8000/']
 

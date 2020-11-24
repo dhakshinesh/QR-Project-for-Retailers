@@ -12,4 +12,4 @@ def index(request):
     return render(request, "index.html", context)
 
 def generate(request):
-    return render(request, "generate")
+    return render(request, "generate.html")

@@ -10,7 +10,8 @@ class ProductInfo(models.Model):
     location = models.CharField(CharField, blank=True, null=True, max_length=20)
     timestamp = models.DateTimeField(blank=True, null=True)
     key = models.CharField(CharField, max_length=16)
+    company = models.CharField(CharField, max_length=30 ,null=True)
 
     class Meta:
         managed = True
-        db_table = 'main_productinfo'
+        db_table = 'ProdctInfo'
