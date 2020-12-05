@@ -14,4 +14,4 @@ class ProductInfo(models.Model):
 
     class Meta:
         managed = True
-        db_table = 'ProdctInfo'
+        db_table = 'Prodctinfo'

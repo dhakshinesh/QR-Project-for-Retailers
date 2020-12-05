@@ -13,3 +13,8 @@ def index(request):
 
 def generate(request):
     return render(request, "generate.html")
+
+def Login(request):
+    return render (request, "login.html")
+def signup(request):
+    return render (request, "signup.html")
